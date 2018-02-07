@@ -3,7 +3,7 @@
  * Plugin Name: Webdoone BB Simple Slider
  * Plugin URI: http://webdoone.com
  * Description: Beaver Builder simple slider.
- * Version: 1.0.4
+ * Version: 1.0.5
  * Author: Webdoone
  * Author URI: http://webdoone.com
  */

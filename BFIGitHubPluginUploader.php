@@ -80,7 +80,7 @@ class BFIGitHubPluginUpdater {
             $obj = new stdClass();
             $obj->slug = $this->slug;
             $obj->new_version = $this->githubAPIResult->tag_name;
-            $obj->url = $this->pluginData["http://webdoone.com"];
+            $obj->url = $this->pluginData["PluginURI"];
             $obj->package = $package;
             $transient->response[$this->slug] = $obj;
         }
@@ -102,9 +102,9 @@ class BFIGitHubPluginUpdater {
         // Add our plugin information
         $response->last_updated = $this->githubAPIResult->published_at;
         $response->slug = $this->slug;
-        $response->plugin_name  = $this->pluginData["Webdoone Simple Slider"];
+        $response->plugin_name  = $this->pluginData["Name"];
         $response->version = $this->githubAPIResult->tag_name;
-        $response->author = $this->pluginData["Webdoone"];
+        $response->author = $this->pluginData["AuthorName"];
         $response->homepage = $this->pluginData["PluginURI"];
 
         // This is our release download zip file
