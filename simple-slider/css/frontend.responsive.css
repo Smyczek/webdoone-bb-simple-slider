@@ -1,0 +1,5 @@
+/* Wrapper */
+.fl-content-slider,
+.fl-content-slider .fl-slide {
+	min-height: 0 !important;
+}
