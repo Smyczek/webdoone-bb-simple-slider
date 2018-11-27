@@ -138,6 +138,15 @@ FLBuilder::register_module('FLSimpleSliderModule', array(
 						'sanitize'		=> 'absint',
 						'description'   => _x( 'seconds', 'Value unit for form field of time in seconds. Such as: "5 seconds"', 'fl-builder' ),
 					),
+					'pause_on_hover'    => array(
+						'type'          => 'select',
+						'label'         => __( 'Pause On Hover', 'fl-builder' ),
+						'default'       => '0',
+						'options'       => array(
+							'0'             => __( 'No', 'fl-builder' ),
+							'1'             => __( 'Yes', 'fl-builder' ),
+						),
+					),
 					'play_pause'    => array(
 						'type'          => 'select',
 						'label'         => __( 'Show Play/Pause', 'fl-builder' ),
