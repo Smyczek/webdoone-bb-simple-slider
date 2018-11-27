@@ -10,6 +10,9 @@
 			autoControls: <?php if ( $settings->play_pause ) { echo 'true';
 } else { echo 'false';
 } ?>,
+			pauseOnHover: <?php if ( $settings->pause_on_hover ) { echo 'true';
+} else { echo 'false';
+} ?>,
 			pause: <?php echo $settings->delay * 1000; ?>,
 			mode: '<?php echo $settings->transition; ?>',
 			speed: <?php echo $settings->speed * 1000; ?>,
